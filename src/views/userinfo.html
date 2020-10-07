@@ -1,0 +1,99 @@
+<!Doctype html>
+<html Lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>User Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="stylesheet" href="../styles/user.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://yourdomain.com/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel='icon' href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="box">
+  <div class="user-card">
+        <label>Name: Eden Hazard</label><br>
+        <label>Age: 25 yrs</label><br>
+        <label>Address: Darwin</label><br>
+        <label>Gmail: some@domain.com</label><br>
+        <label>Phone Number: xx-xx-xx</label><br>
+        <label>DOB: DD/MM/YY</label>
+    <img src="https://avatars0.githubusercontent.com/u/13105865?s=400&v=4" class="user-img" alt="user">
+    </div>
+    <hr>
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="credit-info">
+    <h3> Your Credit Card Info</h3>
+        <table>
+          <tr>
+            <td>Credit Card number</td>
+            <td>XXXX-XXXX-XXXX-9867</td>
+          </tr>
+          <tr>
+            <td>Card Expery Month</td>
+            <td>May</td>
+          </tr>
+          <tr>
+            <td>Card Expery Year</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Card Holder Name</td>
+            <td>Eden Hazard</td>
+          </tr>
+        </table>
+        <br>
+        <label style="text-align:center; color:#000"><strong>Accepted Cards</strong></label>
+            <div class="icon-container">
+              <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="paypal"/>
+              <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa-card"/>
+              <img src="https://img.icons8.com/color/48/000000/amex.png" alt="american-express"/>
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="masterd-card"/>
+              <img src="https://img.icons8.com/color/48/000000/jcb.png" alt="jcb-card"/>
+            </div>
+            <p><strong>You can update your card details below:-</strong></p>
+            <label class="word">Name on the Card</label>
+            <input class="text"type="text" name="cardname" placeholder="User Name">
+            <label class="word">Credit card number</label>
+            <input class="text" type="text" name="cardnumber" placeholder="XXX-XXXX-XXXX-4444">
+            <label class="word">Exp Month</label>
+            <input class="text" type="text" name="expmonth" placeholder="Expire Month">
+            <div class="row">
+              <div class="col">
+                <label class="word">Exp Year</label>
+                <input class="text" type="text" name="expyear" placeholder="Expire year">
+              </div>
+            </div>
+            <div class="row1">
+              <div class="col1">
+                <label class="word">CVV</label>
+                <input class="text" type="text" name="CVV" placeholder="CVV">
+              </div>
+            </div>
+            <a href="#" class="update-button">Update</a>
+          </div>
+        </div>
+    <button class="info-btn" onclick="openNav()">credit card info</button>
+    <button id="btn" class="info-btn">Contact Us</btton>
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="goBack()">&times;</span>
+        <form name="form" class="popupbox" onsubmit="return validateForm()" method="post" required>
+          <h2 style="color:#000;"> Contact us</h2>
+          <input type="text" name="fname" placeholder="Your Name"/>
+          <input type="text" name="email" placeholder="info@damain.com"/>
+          <textarea type="text" name="message" placeholder="Message"></textarea>
+          <input id ="register" type="submit" class="info-btn" onclick="window.location='userinfo.html'" value="submit"/>
+        </form>
+      </div>
+    </div>
+  <button class="info-btn" onclick="window.location='mainpage.html'">Go Back</button>
+</div>
+<script src="../js/main1.js"></script>
+<script src="../js/card.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

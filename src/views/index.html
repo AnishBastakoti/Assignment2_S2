@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bookbank, BOOKBANK,e-book, SELL_BOOK, buy-book, order book">
+  <meta name="theme-color" content="#764ABC"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signup Page</title>
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel='icon' href="../img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="../img/intro.png" alt="IMG">
+				</div>
+				<form class="login100-form" method="post">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+					<div class="wrap-input100">
+						<input id="email" class="input100" type="text" name="user" placeholder="Emter email address" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100">
+						<input id="pwd1" class="input100" type="password" name="pwd" placeholder="Password" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<input type="submit" name="submit" class="login100-form-btn" value="Login" onclick="login()">
+					</div>
+
+					<div class="text-center p-t-12">
+						<span>
+							Forgot
+						</span>
+						<a href="#">
+							Username / Password?
+						</a>
+					</div>
+        </form>
+
+          <div class="main center">
+            <input type="checkbox" id="Checkbtn">
+            <label for="Checkbtn">
+              <a> Create your Account</a>
+            </label>
+            <div class="box">
+              <div class="box1">
+                  <div class="icon">
+                      <div class="ribbon"> Read Book Every Days</div>
+                      <i class="fa fa-user fa-2x"></i>
+                  </div>
+                  <h2> Sign in </h2>
+                  <form id="form" method="post">
+                      <div class="inputBox">
+                          <input type="email" name="email" id="email" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>Email</label>
+                      </div>
+                      <div class="inputBox">
+                          <input type="password" name="text" id="pwd1" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>Password</label>
+                      </div>
+                      <div class="inputBox">
+                          <input type="password" name="text2" id="pwd2" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>Re-Password</label>
+                      </div>
+                      <div class="inputBox">
+                          <input type="text" name="user" id="user" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>Username</label>
+                      </div>
+                      <div class="inputBox">
+                          <input type="text" name="number" id="num" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>Number</label>
+                      </div>
+                      <div class="inputBox">
+                          <input type="text" name="dob" id="dob" required onkeyup="this.setAttribute('value, this.value');" value="">
+                          <label>DOB</label>
+                      </div>
+                      <p> By signing up you agree our <a href="Terms-and-conditions.pdf" target="_blank">terms and conditions</a></p>
+                      <input type="submit" name="sign-in" value="sign-in" onclick="window.location ="mainpage.html""/>
+                      <br>
+                      <label for="Checkbtn" class="btn">Close</label>
+                  </form>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/index.js"></script>
+	<script src="../js/main1.js"></script>
+</body>
+</html>

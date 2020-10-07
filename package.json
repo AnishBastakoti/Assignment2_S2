@@ -1,0 +1,52 @@
+{
+  "name": "pwa-application",
+  "version": "1.0.0",
+  "description": "This is the simple PWA/app  which allows users to sell/buy/rent books.",
+  "main": "build/index.html",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnishBastakoti/Assignment2_S1.git"
+  },
+  "keywords": [
+    "Book",
+    "BOOK",
+    "BOOKBANK",
+    "BookBank",
+    "app",
+    "mobile-app",
+    "PWA",
+    "e-book",
+    "buybook",
+    "sell-book"
+  ],
+  "author": "Anish Bastakoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnishBastakoti/Assignment2_S1/issues"
+  },
+  "homepage": "https://github.com/AnishBastakoti/Assignment2_S1/src/views/index.html",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "whatwg-fetch": "^3.4.1",
+    "yargs": "^16.0.3"
+  },
+  "dependencies": {}
+}

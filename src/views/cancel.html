@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cancel Order</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="../../manifest.json">
+<link rel="apple-touch-icon" sizes="180x180" href="https://yourdomain.com/apple-touch-icon-180x180.png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../styles/cancel.css">
+<link rel='icon' href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <dialog-polyfill open class="box"> Your Order has been canceled. Remember you can re-order worth of same amount!!. To re-order click on <span style=" text-decoration: underline; cursor:pointer;" onclick="document.location = 'mainpage.html'">re-order button</span></dialog-polyfill>
+    <dialog-polyfill open class="box"> If you click <span style="cursor:pointer; text-decoration: underline;">refund</span> button then you will recievce the refund in 24 hrs</dialog-polyfill>
+    <a id="btn" class="button1">Refund</a>
+    <a href="mainpage.html" class="button1">Re-order</a>
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="color:#f1f1f1;">You will get refund within 72 hrs please fill the below form to claim the refund</p>
+        <form name="form" class="popupbox" onsubmit="return validateForm()" method="post" required>
+          <h2> Contact us</h2>
+          <input type="text" name="fname" placeholder="Your Name"/>
+          <input type="text" name="email" placeholder="info@damain.com"/>
+          <textarea type="text" name="message" placeholder="Message"></textarea>
+          <input id ="register" type="submit" class="button1" value="submit" onclick="window.location='mainpage.html'"/>
+        </form>
+      </div>
+    </div>
+<script src="../js/main1.js"></script>
+<script src="../js/cancel.js"></script>
+</body>
+</html>

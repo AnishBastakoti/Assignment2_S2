@@ -1,0 +1,90 @@
+<!Doctype html>
+<html Lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Check out Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://yourdomain.com/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="../styles/checkout1.css">
+  <link rel='icon' href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="box">
+      <h3> Your Orders Summary</h3>
+      <table>
+        <tr>
+          <td>Items</td>
+          <td>4</td>
+          <td>27$</td>
+        </tr>
+        <tr>
+          <td>Tax(5%)</td>
+          <td>--</td>
+          <td>1.35$</td>
+        </tr>
+        <tr>
+          <td>Delivery</td>
+          <td>--</td>
+          <td>5$</td>
+        </tr>
+        <tr>
+          <td>Grand Total</td>
+          <td>NA</td>
+          <td>$33.35</td>
+        </tr>
+      </table>
+      <button id="myBtn" class="fa fa-credit-card" aria-hidden="true">Order</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <i class="fa fa-check-circle"></i>
+          <h1> Payment Received!</h1>
+          <h2>Your order will be there in 3,4 business days!</h2>
+          <a href="mainpage.html" class="close">OK</a>
+          <a href="cancel.html" class="close">Cancel order</a>
+        </div>
+      </div>
+    <input type="checkbox" value="checked" class="check-box">
+    <label style="margin-left:2em;"> Use account address as a delivery option</label>
+  <p><strong>OR</strong></p>
+      <button id="bton1" onclick="openForm()">Pay with Paypal</button>
+
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <h1 style="color:cornsilk; font-family:cursive;">Login</h1>
+
+      <label for="email"><b>Paypal Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn" onclick="document.location='confirm.html'">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+      <button id="myBtn1" onclick="openCredit()">New credit card</button>
+      <div class="form-pop" id="credit">
+          <h1> Credit card Info</h1>
+            <div class="collapse">
+              <h3> Enter Credit Card Info</h3>
+                <label class="word">Name on the Card</label>
+                <input type="text" name="cardname" placeholder="John More Doe">
+                <label class="word">Credit card number</label>
+                <input type="text" name="cardnumber" placeholder="XXX-XXXX-XXXX-4444">
+                <label class="word">Exp Month</label>
+                <input type="text" name="expmonth" placeholder="September">
+                <label class="word">Exp Year</label>
+                <input type="text" name="expyear" placeholder="2022">
+                <label class="word">CVV</label>
+                <input type="text" name="CVV" placeholder="223">
+                <a href="confirm.html" class="button">Place Order</a>
+                <button type="button" class="button" onclick="closeCredit()">Close</button>
+              </div>
+          </div>
+  </div>
+<script src="../js/main1.js"></script>
+<script src="../js/popup.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

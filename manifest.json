@@ -1,0 +1,46 @@
+{
+    "name": "Book Bank",
+    "short_name": "BookBank",
+    "icons": [
+        {
+            "src": "src/img/a1.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "src/img/a2.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "src/img/a3.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "src/img/a4.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "src/img/a5.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "src/img/a6.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "../build/views/mainpage.html",
+    "display": "standalone",
+    "background_color": "#764ABC",
+    "theme_color": "#764ABC"
+}

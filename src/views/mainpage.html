@@ -15,114 +15,170 @@
     <link rel="stylesheet" href="../styles/mainpage.css">
 </head>
 <body>
-  <div class="main-box">
+  <section class="main-box">
+    <div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>5500+</h3>
+      <p>Books</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>1000+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Satisfaction</p>
+    </div>
+  </div>
+</div>
+    <div class="branch-box">
+    <div class="box">
+    <table border="0" cellpadding="5">
+      <tr>
+        <td onclick='document.location="book.html"'align="center" valign="center">
+          <img src="../img/img1.png" alt="harry potter book" />
+          <br />
+          Harry Potter
+        </td>
+        <td onclick='document.location="book.html"'align="center" valign="center">
+          <img src="../img/cyber.png" alt="cyber Security" />
+          <br />
+          Cyber Security
+        </td>
+        <td onclick='document.location="book.html"' align="center" valign="center">
+          <img src="../img/img3.png" alt="Engineering" />
+          <br />
+          Engineering
+        </td>
+        <td  onclick='document.location="book.html"'align="center" valign="center">
+          <img src="../img/comic.png" alt="Comic" />
+          <br />
+          Spider man
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p> Trending books </p>
   <div class="box">
   <table border="0" cellpadding="5">
     <tr>
-      <td onclick='document.location="book.html"'align="center" valign="center">
-        <img src="../img/img1.png" alt="harry potter book" />
-        <br />
-        Harry Potter
-      </td>
-      <td onclick='document.location="book.html"'align="center" valign="center">
-        <img src="../img/cyber.png" alt="cyber Security" />
-        <br />
-        Cyber Security
-      </td>
       <td onclick='document.location="book.html"' align="center" valign="center">
-        <img src="../img/img3.png" alt="Engineering" />
+        <img src="../img/civil.png" alt="Engineering book" />
         <br />
         Engineering
       </td>
-      <td  onclick='document.location="book.html"'align="center" valign="center">
-        <img src="../img/comic.png" alt="Comic" />
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/spider.png" alt="comics" />
         <br />
-        Spider man
+        Comics
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/aero.png" alt="Aeronuatics Engineering" />
+        <br />
+        Aero Engineering
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/novel1.png" alt="Novel" />
+        <br />
+        Ramayan
       </td>
     </tr>
   </table>
+  </div>
+  <p> Authors</p>
+  <div class="box">
+  <table border="0" cellpadding="5">
+    <tr>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/martin.jpg" alt="George RR martin" />
+        <br />
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/maya.jpg" alt="maya" />
+        <br />
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/jk.jpg" alt="JK Rolwiling" />
+        <br />
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/toni.jpg" alt="toni morrision" />
+        <br />
+      </td>
+    </tr>
+  </table>
+  </div>
+  <br>
+  <div class="box">
+  <table border="0" cellpadding="5">
+    <tr>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/law.png" alt="Law book" />
+        <br />
+        Law Books
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/doctor.png" alt="MBBS" />
+        <br />
+        MBBS Book
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/novel.png" alt="Novel" />
+        <br />
+      Novel
+      </td>
+      <td onclick='document.location="book.html"' align="center" valign="center">
+        <img src="../img/ML.png" alt="python" />
+        <br />
+        Machine Learning
+      </td>
+    </tr>
+  </table>
+  </div>
+  <a href="userinfo.html" class="fas fa-user"></a>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Book/Authors names.." title="Type in a name">
+  <i class="fas fa-book"></i>
 </div>
-<p> Trending books </p>
-<div class="box">
-<table border="0" cellpadding="5">
-  <tr>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/civil.png" alt="Engineering book" />
-      <br />
-      Engineering
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/spider.png" alt="comics" />
-      <br />
-      Comics
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/aero.png" alt="Aeronuatics Engineering" />
-      <br />
-      Aero Engineering
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/novel1.png" alt="Novel" />
-      <br />
-      Ramayan
-    </td>
-  </tr>
-</table>
-</div>
-<p> Authors</p>
-<div class="box">
-<table border="0" cellpadding="5">
-  <tr>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/martin.jpg" alt="George RR martin" />
-      <br />
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/maya.jpg" alt="maya" />
-      <br />
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/jk.jpg" alt="JK Rolwiling" />
-      <br />
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/toni.jpg" alt="toni morrision" />
-      <br />
-    </td>
-  </tr>
-</table>
-</div>
-<br>
-<div class="box">
-<table border="0" cellpadding="5">
-  <tr>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/law.png" alt="Law book" />
-      <br />
-      Law Books
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/doctor.png" alt="MBBS" />
-      <br />
-      MBBS Book
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/novel.png" alt="Novel" />
-      <br />
-    Novel
-    </td>
-    <td onclick='document.location="book.html"' align="center" valign="center">
-      <img src="../img/ML.png" alt="python" />
-      <br />
-      Machine Learning
-    </td>
-  </tr>
-</table>
-</div>
-<a href="userinfo.html" class="fas fa-user"></a>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Book/Authors names.." title="Type in a name">
-<i class="fas fa-book"></i>
-</div>
+</section>
 <script src="../js/main1.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/mainpage.js"></script>

@@ -39,7 +39,7 @@
             "purpose": "any maskable"
         }
     ],
-    "start_url": "../build/views/mainpage.html",
+    "start_url": "/views/mainpage.html",
     "display": "standalone",
     "background_color": "#764ABC",
     "theme_color": "#764ABC"

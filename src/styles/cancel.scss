@@ -1,1 +1,17 @@
-*{box-sizing:border-box}body{background-color:rgb(60,179,113);text-align:center}.box{background-color:#000;color:#fff;font-size:26px;font-size:26px;border:3px blue solid;display:block;margin:2em 1em 0em 1em;padding:12px 12px 12px 12px}.button1{margin-top:1.5em;background-color:green;color:#fff;border-radius:10px;padding:3% 0;text-align:center;display:block}a:link{text-decoration:none}.modal{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.8)}.modal-content{background-color:rgba(132,106,221,.9);padding:20px;border:4px solid #f1f1f1;height:100%}.close{color:#f1f1f1;float:right;font-size:28px;font-weight:700}.popupbox{height:auto;border-radius:25px;padding:6px 13px 5px;background-color:#f1f1f1}input,textarea{display:block;width:100%;background:#e6e6e6;font-family:Montserrat-Bold;font-size:23px;line-height:1.5;color:#666;height:73px;border-radius:25px;padding:0 23px;margin-bottom:32px}
+*{box-sizing:border-box}body{background-color:#ddd;text-align:center}.box{background-color:#555;color:#fff;font-size:26px;border:2px solid #000;display:block;margin:2em 1em 0em 1em;padding:12px 12px 12px 12px}.button1{margin-top:1.5em;background-color:green;color:#fff;border-radius:10px;padding:3% 0;text-align:center;display:block}a:link{text-decoration:none}.modal{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.8)}.modal-content{background-color:rgba(132,106,221,.9);padding:20px;border:4px solid #f1f1f1}.close{color:#f1f1f1;float:right;font-size:28px;font-weight:700}.popupbox{height:auto;border-radius:25px;padding:6px 13px 5px;background-color:#f1f1f1}input,textarea{display:block;width:100%;background:#e6e6e6;font-family:Montserrat-Bold;font-size:23px;line-height:1.5;color:#666;height:66px;border-radius:25px;padding:0 23px;margin-bottom:32px}
+section{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: 2px solid;
+  background: #fff;
+  padding: 40px;
+  line-height:1.4;
+}
+
+@media(max-width:599px){
+  section{
+    display: contents;
+  }
+}

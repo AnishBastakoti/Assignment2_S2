@@ -5,6 +5,7 @@
   <title>Check out Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="../../manifest.json">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="apple-touch-icon" sizes="180x180" href="https://yourdomain.com/apple-touch-icon-180x180.png">
   <link rel="stylesheet" href="../styles/checkout1.css">
   <link rel='icon' href="../img/icon.png" type="image/x-icon">
@@ -34,21 +35,10 @@
           <td>$33.35</td>
         </tr>
       </table>
-      <button id="myBtn" class="fa fa-credit-card" aria-hidden="true">Order</button>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <i class="fa fa-check-circle"></i>
-          <h1> Payment Received!</h1>
-          <h2>Your order will be there in 3,4 business days!</h2>
-          <a href="mainpage.html" class="close">OK</a>
-          <a href="cancel.html" class="close">Cancel order</a>
-        </div>
-      </div>
-    <input type="checkbox" value="checked" class="check-box">
-    <label style="margin-left:2em;"> Use account address as a delivery option</label>
-  <p><strong>OR</strong></p>
-      <button id="bton1" onclick="openForm()">Pay with Paypal</button>
-
+      <input type="checkbox" value="checked" class="check-box">
+      <label style="margin-left:2em;"> Use account address as a delivery option</label>
+      <button onclick="button()" id="myBtn1" class="fa fa-credit-card" aria-hidden="true">Order</button>
+      <button id="myBtn1" onclick="openForm()">Pay with Paypal</button>
   <div class="form-popup" id="myForm">
     <form class="form-container">
       <h1 style="color:cornsilk; font-family:cursive;">Login</h1>
@@ -65,8 +55,8 @@
   </div>
       <button id="myBtn1" onclick="openCredit()">New credit card</button>
       <div class="form-pop" id="credit">
+        <div class="form">
           <h1> Credit card Info</h1>
-            <div class="collapse">
               <h3> Enter Credit Card Info</h3>
                 <label class="word">Name on the Card</label>
                 <input type="text" name="cardname" placeholder="Name">
@@ -77,14 +67,14 @@
                 <label class="word">Exp Year</label>
                 <input type="text" name="expyear" placeholder="Year">
                 <label class="word">CVV</label>
-                <input type="text" name="CVV" placeholder="XXX">
+                <input type="text" name="CVV" placeholder="XXX"/>
+                <button onclick="button()" type="button" class="w3-bar-item w3-button w3-black" style="width:48%">Place Order</button>
+                <button type="button"  class="w3-bar-item w3-button w3-black" style="width:48%" onclick="closeCredit()">Close</button>
               </div>
-              <a href="confirm.html" class="button">Place Order</a>
-              <button type="button" class="button" onclick="closeCredit()">Close</button>
           </div>
   </div>
 <script src="../js/main1.js"></script>
 <script src="../js/popup.js"></script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

@@ -1,1 +1,79 @@
-*{box-sizing:border-box}table{width:210%}tr{height:11vh}td{padding-top:12px;padding-bottom:12px;background-color:#4CAF50;color:#fff}.box{background-color:aqua;width:100%;padding:2%;overflow:scroll}.main-box{background-color:aliceblue;height:100%;width:100%;overflow:scroll}img{width:61%}p{text-align:center;color:Blue;font-weight:700;font-size:1rem}a{padding:10px 15px;font-size:44px}i{padding:0 2px;font-size:44px}input[type=text],select{width:64vw;height:6vh;padding:12px 20px;margin:6px 0;display:inline-block;border:1px solid #ccc;border-radius:4px;box-sizing:border-box}
+*{box-sizing:border-box}table{width:210%}tr{height:11vh}td{padding-top:12px;padding-bottom:12px;background-color:#4CAF50;color:#fff}.box{background-color:aqua;width:100%;padding:2%;overflow:scroll}.main-box{background-color:aliceblue;height:100%;width:100%;overflow:scroll}img{width:61%}p{text-align:center;font-weight:700;font-size:1rem}a{padding:10px 15px;font-size:44px}i{padding:0 2px;font-size:44px}input[type=text],select{width:62%;height:6vh;padding:12px 20px;margin:6px 0;display:inline-block;border:1px solid #ccc;border-radius:4px;box-sizing:border-box}
+.branch-box{
+  margin-left: 24%;
+  margin-right: 24%;
+  border: 5px solid;
+}
+@media(max-width:576px){
+  .branch-box{
+    margin: 0;
+  }
+  .row{
+    display: none;
+  }
+  .slideshow-container{
+    display: none;
+  }
+}
+
+.row {transform: translate(355%, 3%);
+    width: 22%;
+    position: absolute;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}
+.container {
+  position: relative;
+}
+.slideshow-container {
+  position: absolute;
+  background: #f1f1f1f1;
+  width:24%;
+}
+.mySlides {
+  display: none;
+  padding: 14px 0 0 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 82%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+q {font-style: italic;}
+.author {color: cornflowerblue;}

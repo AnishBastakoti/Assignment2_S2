@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-
+/*
 Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
@@ -50,48 +50,45 @@ self.addEventListener('notificationclick', function(event) {
     clients.openWindow('http://www.youtube.com');
   }
 });
-/*
-navigator.serviceWorker.ready.then(function(reg) {
-  reg.pushManager.getSubscription().then(function(sub) {
-    if (sub == undefined) {
-      // ask user to register for Push
-    } else {
-      // You have subscription, update the database on your server
-    }
-  });
-});
-navigator.serviceWorker.getRegistration()
-.then(function(reg) {
-  reg.pushManager.subscribe({
-    userVisibleOnly: true
-  }).then(function(sub) {
-    // send sub.toJSON() to server
-  });
-});
-{
-    "endpoint": "https://fcm.googleapis.com/fcm/send/f1LsxkKp...",
-    "keys": {
-        "p256dh": "BLc4xRzKlKORKWlbdgFaB1oEKgPpWC5cW8OCzVrOQRv-1n ...",
-        "auth": "5I2Bu2oKdyy9CwL8QVF0NQ=="
-    }
-}
-*/
 
-/*
-function displayNotification() {
-  if (Notification.permission === 'granted') {
-    navigator.serviceWorker.getRegistration()
-    .then(function(reg){
-      reg.showNotification('Subscribe to our news letter');
-    });
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  showInstallPromotion();
+});
+
+buttonInstall.addEventListener('click', (e) => {
+  // Hide the app provided install promotion
+  hideMyInstallPromotion();
+  // Show the install prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+  });
+});
+window.addEventListener('appinstalled', (evt) => {
+  // Log install to analytics
+  console.log('INSTALL: Success');
+});
+
+var buttonInstall = `
+    buttonInstall{
+    padding: 10px;
+    border: 2px solid #F10;
+    background:#F10;
   }
-}
-var options = {
-  body: 'First notification!',
-  actions: [
-    {action: 'explore', title: 'Go to the site', icon: 'img/check.png'},
-    {action: 'close', title: 'No thank you', icon: 'img/x.png'},
-  ]
-};
-reg.showNotification('Hello world!', options);
+`
+var styleSheet = document.createElement("buttonInstall")
+styleSheet.type = "text/css"
+styleSheet.innerText = styles
 */

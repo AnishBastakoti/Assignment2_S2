@@ -1,7 +1,7 @@
 function login()
 	{
-		var uname = document.getElementById("email").value;
-		var pwd = document.getElementById("pwd1").value;
+		var uname = document.getElementById("email1").value;
+		var pwd = document.getElementById("pwd").value;
 		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		if(uname =='')
 		{

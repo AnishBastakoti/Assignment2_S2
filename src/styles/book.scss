@@ -3,3 +3,10 @@
   margin: 0px 157px;
   border: 2px solid;
 }
+
+@media (max-width: 576px){
+  .main-box{
+    margin: 0px;
+    border: 2px solid;
+  }
+}

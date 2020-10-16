@@ -5,7 +5,7 @@ const urlsToCache = [
   '/',
   'index.html',
   '/views/mainpage.html',
-  /*'/views/book.html',
+  '/views/book.html',
   '/views/cancel.html',
   '/views/checkout.html',
   '/views/confirm.html',
@@ -51,7 +51,7 @@ const urlsToCache = [
   '/img/search.png',
   '/img/novel1.png',
   '/img/toni.jpg',
-  '/img/spider.png',*/
+  '/img/spider.png',
 ];
 self.addEventListener("install", (e) => {
   console.log("Service Worker: Installed");

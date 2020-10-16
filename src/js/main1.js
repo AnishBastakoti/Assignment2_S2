@@ -9,7 +9,6 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-/*
 Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
@@ -80,15 +79,3 @@ window.addEventListener('appinstalled', (evt) => {
   // Log install to analytics
   console.log('INSTALL: Success');
 });
-
-var buttonInstall = `
-    buttonInstall{
-    padding: 10px;
-    border: 2px solid #F10;
-    background:#F10;
-  }
-`
-var styleSheet = document.createElement("buttonInstall")
-styleSheet.type = "text/css"
-styleSheet.innerText = styles
-*/
